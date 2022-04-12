@@ -6,8 +6,8 @@ In the second day of docker handson series, we will see how to deploy a HTML pag
 
 Base images are images that have no parent image, usually images with an Operating System like ubuntu, centos or debian. To know about base image and parent image, check here https://docs.docker.com/develop/develop-images/baseimages/
 
-
 ## Prepare a Dockerfile
+
 **Dockerfile** is a text document that contains all the commands that a user could call on the command line to assemble an image. With the help of dockerfile, we can create a docker image. Let's see how we are going to create an image to deploy a HTML page.
 
 In this example, our base image is alpine version of nginx
@@ -16,15 +16,15 @@ In this example, our base image is alpine version of nginx
     FROM nginx:alpine
     COPY . /usr/share/nginx/html
 
-
 ## Create a docker image from dockerfile using docker build command
+
 **Docker build** command executes the instruction present in the dockerfile and then creates a docker image.
 
     Syntax: docker build [OPTIONS] PATH | URL | -
     
     Actual command: docker build -t webserver:v1 .
 
-    The above command creates a docker image named webserver with a tag of v1. You may notice . (dot) at the end of the docker build command which tells that the dockerfile is present in the current directory.
+The above command creates a docker image named webserver with a tag of v1. You may notice . (dot) at the end of the docker build command which tells that the dockerfile is present in the current directory.
     
 Let's execute the **docker build** command and see the results.
 

@@ -34,7 +34,10 @@ Next step is tag the docker image whoch we are going to push.
 
 Syntax: docker tag SOURCE_IMAGE[:TAG] TARGET_IMAGE[:TAG]
 
-    # docker tag webserver:v1 navinprasadk/webserver:v1
+    # docker tag webserver:v1 xxxx/webserver:v1
+
+Here the xxxx denotes the user id from the docker hub.
+webserver denotes the respoitory name and the v1 refers to the ersion of the docker image
 
 ## Push the docker image
 
@@ -42,8 +45,8 @@ Docker push is the command used to push an image or a repository to a registry
 
 Syntax:  docker push [OPTIONS] NAME[:TAG]
 
-    # docker push <username>/webserver:v1
-    The push refers to repository [docker.io/<username>/webserver]
+    # docker push xxxx/webserver:v1
+    The push refers to repository [docker.io/xxxx/webserver]
     a795e088a51e: Pushed
     b991c80c3ef2: Pushed
     8df6b63c60d4: Pushed
@@ -53,4 +56,4 @@ Syntax:  docker push [OPTIONS] NAME[:TAG]
     4fc242d58285: Pushed
     v1: digest: sha256:4aeb0ddf88b5061ea5fe1faddf1c6794c5fa64825698316913e7462ae0d9cc8a size: 1775
 
-Great! we have successfully uploaded to the registry!
+Great! we have successfully uploaded to the registry! Now if anybody needs your docker image, they can download it from dockerhub using the following command **docker.io/<username>/webserver**

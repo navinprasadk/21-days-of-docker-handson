@@ -5,3 +5,5 @@
 [Day 02: Deploy a HTML page with the help of dockerfile](./Day02/README.md)
 
 [Day 03: Push the docker image to the container registry](./Day03/README.md)
+
+[Day 04: Update the source code and deploy the latest version of docker image](./Day04/README.md)
