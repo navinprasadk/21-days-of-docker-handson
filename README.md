@@ -7,3 +7,7 @@
 [Day 03: Push the docker image to the container registry](./Day03/README.md)
 
 [Day 04: Update the source code and deploy the latest version of docker image](./Day04/README.md)
+
+[Day 05: Persist the container data with docker volumes](./Day05/README.md)
+
+[Day 06: Persist the container data with docker bind mount](./Day06/README.md)

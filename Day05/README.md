@@ -9,6 +9,7 @@ In this post, we will see how to persist the data using docker volumes.
 Volumes are stored in the host file system and it is managed by docker. Volumes is the preferred way to persist the data, it can be shared among the containers and it has a longer lifecycle than containers.
 
 ## Create a volume
+Volume has been created inside docker's storage directory(/var/lib/volumes/) on the host machine.
 
     # docker volume create handson_data
     handson_data
@@ -48,11 +49,11 @@ To know the details about the created volume, use the *docker inspect* command. 
 To mount a volume or attach a volume to the container, either we can use the --volume or --mount option. Here, we see the --mount option to attach the volume to the container.
 
 **Syntax to attach volume to the container:**  
-docker run --mount source=[volume_name],destination=[path_in_container] [docker_image]
+docker run --mount type=volume,source=[volume_name],destination=[path_in_container] [docker_image]
 
 Let's run the Nginx container and mount the '/app' directory to the 'handson_data' volume. If the volume is not created, it will be created during the command execution
 
-    # docker run --detach --name nginx_container --mount source=handson_data,target=/app nginx:1.21-alpine
+    # docker run --detach --name nginx_container --mount  type=volume,source=handson_data,target=/app nginx:1.21-alpine
 
 The container has been started. Let's inspect the container and confirm whether the volume is attached or not.
 
