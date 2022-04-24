@@ -13,3 +13,5 @@
 [Day 06: Persist the container data with docker bind mount](./Day06/README.md)
 
 [Day 07: Attach a container to the docker network](./Day07/README.md)
+
+[Day 08: Communication between two containers using docker bridge network](./Day08/README.md)
