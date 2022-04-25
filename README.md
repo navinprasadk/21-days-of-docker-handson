@@ -15,3 +15,5 @@
 [Day 07: Attach a container to the docker network](./Day07/README.md)
 
 [Day 08: Communication between two containers using docker bridge network](./Day08/README.md)
+
+[Day 09: Write the dockerfile and run the container](./Day09/README.md)
