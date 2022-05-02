@@ -10,7 +10,7 @@ Let's see each of the methods below.
 
 ## 1. By mounting the host directory
 
-Here we are using [bind mount concept discussed in Day 06 post](../Day06/README.md) to sync the files between docker host and container. This is the preferred way.
+Here we are using [bind mount concept discussed in day 06 post](../Day06/README.md) to sync the files between docker host and container. This is the preferred way.
 
     docker run --detach --mount type=bind,source=C:\workspace\docker\app,target=/app --name con_A debian:10.12-slim sleep infinity
 

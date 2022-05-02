@@ -22,7 +22,7 @@ Here is the list of dockerfile instructions with small descriptions,
 
 - ENTRYPOINT ["executable", "param1", "param2"] (or) ENTRYPOINT command param1 param2 - Configures the container to be run as an executable.
 
-- CMD Provide defaults for an executing container. If an executable is not specified, then ENTRYPOINT must be specified as well. There can only be one CMD instruction in a Dockerfile.
+- CMD ["command","param1"] Provide defaults for an executing container. If an executable is not specified, then ENTRYPOINT must be specified as well. There can only be one CMD instruction in a Dockerfile.
 
 - EXPOSE PORT - Network ports that this container will listen on at runtime.
 

@@ -17,3 +17,7 @@
 [Day 08: Communication between two containers using docker bridge network](./Day08/README.md)
 
 [Day 09: Write the dockerfile and run the container](./Day09/README.md)
+
+[Day 10: Copy files between docker host and container](./Day10/README.md)
+
+[Day 11: CMD and ENTRYPOINT instructions in the dockerfile](./Day11/README.md)
