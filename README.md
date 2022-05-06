@@ -21,3 +21,5 @@
 [Day 10: Copy files between docker host and container](./Day10/README.md)
 
 [Day 11: CMD and ENTRYPOINT instructions in the dockerfile](./Day11/README.md)
+
+[Day 12: Run multiple containers using docker-compose](./Day12/README.md)
