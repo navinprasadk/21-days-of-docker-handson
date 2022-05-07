@@ -38,9 +38,9 @@ Let's move to the second step. (creating a docker-compose)
         depends_on:
         - db
         environment:
-        SONAR_JDBC_URL: jdbc:postgresql://db:5432/sonar
-        SONAR_JDBC_USERNAME: sonar
-        SONAR_JDBC_PASSWORD: sonar
+            SONAR_JDBC_URL: jdbc:postgresql://db:5432/sonar
+            SONAR_JDBC_USERNAME: sonar
+            SONAR_JDBC_PASSWORD: sonar
         volumes:
         - sonarqube_data:/opt/sonarqube/data
         - sonarqube_extensions:/opt/sonarqube/extensions
@@ -50,8 +50,8 @@ Let's move to the second step. (creating a docker-compose)
     db:
         image: postgres:12
         environment:
-        POSTGRES_USER: sonar
-        POSTGRES_PASSWORD: sonar
+            POSTGRES_USER: sonar
+            POSTGRES_PASSWORD: sonar
         volumes:
         - postgresql:/var/lib/postgresql
         - postgresql_data:/var/lib/postgresql/data
@@ -62,6 +62,10 @@ Let's move to the second step. (creating a docker-compose)
     sonarqube_logs: {}
     postgresql: {}
     postgresql_data: {}
+
+Here, we defined two containers one for the sonarqube server and the other one for is Postgres database. In addition to that, we have the network and volume required for those two containers. 
+
+To communicate sonarqube with the Postgres database, we defined some parameters as environment variables in the sonarqube container.
 
 Finally, launch the containers using docker compose up,
 
