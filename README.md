@@ -23,3 +23,5 @@
 [Day 11: CMD and ENTRYPOINT instructions in the dockerfile](./Day11/README.md)
 
 [Day 12: Run multiple containers using docker-compose](./Day12/README.md)
+
+[Day 13: Environment variables in Docker](./Day13/README.md)

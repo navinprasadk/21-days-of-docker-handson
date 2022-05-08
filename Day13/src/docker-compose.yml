@@ -1,0 +1,13 @@
+version: "3.0"
+services:
+  debian_compose_env:
+    image: debian:10.12-slim
+    environment:
+      USER: navin
+      MATURITY: prod
+      SOURCE: docker-compose
+    command: tail -f /dev/null
+    # Incase if your passing environment variables through file
+    # env_file:
+    #   - compose-vars.env     # path to  env file
+
