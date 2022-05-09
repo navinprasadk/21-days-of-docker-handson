@@ -24,4 +24,6 @@
 
 [Day 12: Run multiple containers using docker-compose](./Day12/README.md)
 
-[Day 13: Environment variables in Docker](./Day13/README.md)
+[Day 13: Pass environment variables to Docker containers](./Day13/README.md)
+
+[Day 14: Ignore the files using .dockerignore form the docker build context](./Day14/README.md)

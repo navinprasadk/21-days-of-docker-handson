@@ -1,0 +1,4 @@
+# Exclude the file named unwanted-file.txt
+unwanted-file.txt
+# Exclude all the file whoch ends with .yml extension
+*.yml 
