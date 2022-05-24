@@ -29,3 +29,5 @@
 [Day 14: Ignore the files using .dockerignore form the docker build context](./Day14/README.md)
 
 [Day 15: Check the container's health using HEALTHCHECK instruction](./Day15/README.md)
+
+[Day 16: Run the docker container as a non-root user](./Day16/README.md)
