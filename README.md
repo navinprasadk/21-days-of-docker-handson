@@ -34,4 +34,7 @@
 
 [Day 17: Monitor the resource usage of docker container](./Day17/README.md)
 
-[Day 18: Deploy a container in Azure Container Instances [Cloud]](./Day18/README.md)
+[Day 18: Deploy a container in Azure Container Instances (ACI)](./Day18/README.md)
+
+[Day 19: Create a container registry in Azure Container Registry (ACR)](./Day19/README.md)
+

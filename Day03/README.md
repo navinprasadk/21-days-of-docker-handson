@@ -30,6 +30,7 @@ Copy the registry URL from the above output. Log in with the docker registry usi
     Login Succeeded 
 
 ## Tag the docker image
+
 Next step is tag the docker image whoch we are going to push.
 
 Syntax: docker tag SOURCE_IMAGE[:TAG] TARGET_IMAGE[:TAG]
