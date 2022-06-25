@@ -39,3 +39,5 @@
 [Day 19: Create a container registry in Azure Container Registry (ACR)](./Day19/README.md)
 
 [Day 20: Scan the Container image in the ACR using Aqua](./Day20/README.md)
+
+[Day 21: Configure Docker logging drivers](./Day21/README.md)
